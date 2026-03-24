@@ -1,0 +1,25 @@
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+const int MAX = 100;
+
+// Global variables
+int n = 0;
+string subjects[MAX];
+int students[MAX];
+int conflict[MAX][MAX];
+int slot[MAX];
+
+int rooms = 0;
+string roomNames[MAX];
+int roomCapacity[MAX];
+
+int teacherCount = 0;
+string teachers[MAX] = {"Dr. Smith", "Dr. Jones", "Dr. Taylor", "Dr. Brown", "Dr. Wilson"};
+int teacherAssigned[MAX];
