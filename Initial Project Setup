@@ -23,3 +23,12 @@ int roomCapacity[MAX];
 int teacherCount = 0;
 string teachers[MAX] = {"Dr. Smith", "Dr. Jones", "Dr. Taylor", "Dr. Brown", "Dr. Wilson"};
 int teacherAssigned[MAX];
+
+void skipHeader(ifstream &file) {
+    string dummy;
+    getline(file, dummy);
+}
+
+void ignoreComma(ifstream &file) {
+    if (file.peek() == ',') file.ignore();
+}
